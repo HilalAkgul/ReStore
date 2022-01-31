@@ -1,0 +1,72 @@
+
+START CREATE DOTNET PROJECT ON VİSUALSTUDİO
+dotnet new sln
+dotnet new webapi -o API
+dotnet sln add API
+PS C:\Users\SD\Course> code .
+PS C:\Users\SD\Course> cd API
+PS C:\Users\SD\Course\API> dotnet run
+swagerla açılıyor...:)
+https://localhost:7087/swagger/index.html
+
+extensionslar indir
+C# Extensions
+c#
+Auto Rename Tag
+Bracket Pair Colorizer 2
+Material Icon Theme
+NuGet Gallery
+SQLite
+
+bunkarı yükledikten sonra ctrl shift p yapıyoruz ve reload yapıyouz window reloa yağıyoruz gelen popupa yes diyoruz
+vs code geliyo debugg,ngte lazım olcak sanırım
+
+
+------
+dotnet build
+build yapıyor hataları falan görebiliriz
+dotnet watch run 
+rekrardan başlıyor.
+
+microsoft.entityframework.sqlite
+microsoft.entityframework.designe
+
+alttakini appsettings.Development buraya ve diğer json a koyptala
+
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "Data source=store.db"
+  }
+}appsettings.Development
+program cs bunu ekledik 
+builder.Services.AddDbContext<StoreContext>(db =>
+ db.UseSqlite("Default")
+                    
+                    );
+    ,appsettings.Development.json sayfasına connectionstring ekledil. default olarak
+("ConnectionStrings": {"DefaultConnectin":"Data source=store.db"})
+
+
+dotnet tool install --global dotnet-ef --version 6.0.1 bunu projeye ekle.
+dotnet tool list -g bu bize version listesini vercek 
+
+dotnet ef migrations add InitialCreate -o Data/Migrations
+
+dotnet ef database update
+
+daha sonra ctrl shift p ye basıyoruz üstte sqlite yazınca store.db çıkıyor zate.
+
+program js e initilaze vs ekliyoruz.
+ dotnet ef database drop
+ dotnet watch run yapıoyurz böylece yine db oluşuyor
+
+
+ dotnet new gitignore
+ öncesinde vesağdakş bağlandı gibi şeyden depolama başlat
