@@ -9,6 +9,7 @@ namespace APIProject.Data
         {
         }
 
+        
 
         public DbSet<Product> Products {get;set;}
     }

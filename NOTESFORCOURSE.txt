@@ -70,3 +70,55 @@ program js e initilaze vs ekliyoruz.
 
  dotnet new gitignore
  öncesinde vesağdakş bağlandı gibi şeyden depolama başlat
+
+yeni repository oluşturduk sonra push yaptık.
+
+react projesi oluştruuyoruz Course içine
+npx create-react-app clien --template typescript --use npm
+npm start
+
+const [products,setProduct]= useState([
+    {name:"p1",price:200},
+    {name:"p2",price:300}
+    
+    ]);
+
+    function addProduct(){
+
+setProduct(prevState=>[...prevState,{name:"product"+(prevState.length+1),price:(prevState.length*1000)}]);
+
+
+    }
+
+
+    //useffect sadece 1 kerekullanılıyor.
+    useEffect(() => {
+      effect
+      return () => {
+        cleanup
+      }
+    }, [input])
+
+builder.Services.AddCors();
+    app.UseCors(opt=>{
+ opt.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000","http://localhost:3001");
+});
+
+
+
+componenetler ekleme.
+
+https://mui.com/getting-started/installation/ 
+install yaptık materialui i
+
+npm install @mui/icons-material
+ bunu install ok
+
+ google a dev tools ekledik.
+
+
+ react router indirdikr
+
+
+ navbar yaptık
+ axios kurduk
